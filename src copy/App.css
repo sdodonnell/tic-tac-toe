@@ -1,0 +1,93 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans'
+}
+
+.App {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr 1fr 4fr 2fr 1fr;
+  text-align: center;
+  padding: 25px 50px;
+  background-color: rgb(218, 218, 218)
+}
+
+.board-input {
+  width: 250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+  align-items: center
+}
+
+.board-input input, .board-input button {
+  height: 40px;
+  font-size: 25px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  outline: none;
+  font-family: inherit
+}
+
+.board-input input:hover, .board-input button:hover {
+  cursor: pointer
+}
+
+.board-input input {
+  padding-left: 15px;
+  min-width: 0;
+}
+
+.board {
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+  max-height: 50vh;
+  max-width: 50vh;
+}
+
+.board:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.board-interior {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.winner {
+  font-size: 24px;
+  align-self: center
+}
+
+.square {
+  background-color: rgb(141, 141, 141);
+  border: 3px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center
+}
+
+.square:hover {
+  cursor: pointer
+}
+
+.square svg {
+  position: absolute;
+  fill: #ffffff
+}
